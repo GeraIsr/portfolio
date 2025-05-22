@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/images/Herz.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | By Gera...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Lg1zBIK3gQfL9xqbE",
+      });
+   })();
+</script>
+</head>
+<body>
+
+    <div id="notification" class="notification" style="display: none;">
+        message sent successfully!
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+    
+
+    <section class="home" id="home">
+
+        <div class="home-content">  
+            <h3>Hello, I am</h3>
+            <h1>Georgiy</h1>
+            <p>Hi! I’m a Web Developer.
+                You can check my resume or more information about me in the About section below.</p>
+
+            <div class="social-media">
+                <a href="https://github.com/GeraIsr/Georgiy" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://t.me/geoisr311" target="_blank"><i class='bx bxl-telegram'></i></a>
+                <a href="https://www.instagram.com/georgiy.277?igsh=ZzN4azU2YmFpbHUy" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.tiktok.com/@gera_aristokrat?_t=ZM-8u32icNRXRV&_r=1" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/11TAuOOZcyyC85EM1DQOikP-UvKxMSDz5/view?usp=sharing" target="_blank" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+
+                <div class="profession" style="--i:1;">
+                    <i class='fab fa-php'></i>
+                    <h3>PHP MyAdmins</h3>
+                </div>
+
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+
+                <div class="profession" style="--i:3;">
+                    <i class='fas fa-chess-pawn'></i>
+                    <h3>Pawn Developer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="" alt=""> 
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="images/Gera.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Georgiy</span></h2>
+            <h3>Hi! I’m Georgiy – <span>a FrontEnd Developer.</span></h3>
+            <p>I create responsive, user-friendly, and modern websites and applications. My goal is to write clean, optimized code and solve real business problems using technology.
+                
+                I’m currently developing my skills in Frontend Development, learning HTML, CSS, JavaScript, Node.js, Git. and applying my knowledge in practice. However, my main dream is to become a Cybersecurity Specialist in internet logging. I’m passionate about data protection, encryption, and web application security, and I’m constantly learning new methods to ensure cybersecurity.</p>
+            <a href="#" class="btn" onclick="ToggleText(event)">Read More</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2  class="heading">Georgiy <span>Services</span></h2>
+
+        <div class="services-container">
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I specialize in web development, creating websites that are visually appealing and highly functional. I focus on building fast, responsive, and user-friendly sites that work seamlessly across all devices. My goal is to deliver a site that looks great, aligns with your business objectives, and provides an excellent user experience.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='fas fa-chess-pawn'></i>
+                <h3>Pawno</h3>
+                <p>I’m studying programming with Pawno and working on developing server scripts for SA:MP. I’m focusing on creating unique game mechanics, user interaction, and optimizing server performance. My goal is to master the art of building quality, stable gaming solutions and i also want to create a big project in the future.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>MySQL</h3>
+                <p>I’m learning MySQL and database management, including creating and handling tables for servers. I’m particularly focused on working with myAdmins — an admin system that helps manage user rights and actions on a server. My goal is to master data management and create secure, user-friendly solutions for administrators.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Georgiy Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="images/p1.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Valentine's Day.</p>
+                    <a href="https://geraisr.github.io/Date/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p2.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Valentine's Day</p>
+                    <a href="https://geraisr.github.io/Meine-Herz-/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p3.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Valentine's Day</p>
+                    <a href="https://geraisr.github.io/Frohen-Valentinstag-/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p5.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Under development
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p4.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Under development</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p6.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Devlopment</h4>
+                    <p>Under development</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+        <div class="testimonial-container">
+            <h2 class="heading">My <span>Review</span> (Under development)</h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper">
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t1.jpeg" alt="">
+                            <h3>First Name_Last Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ullam maiores. Mollitia earum illum ipsam.</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t2.jpeg" alt="">
+                            <h3>First Name_Last Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ullam maiores. Mollitia earum illum ipsam.</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t3.jpeg" alt="">
+                            <h3>First Name_Last Name</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ullam maiores. Mollitia earum illum ipsam.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="contact" id="contact">
+            <form action="#" class="contact-form" id="contact-form">
+                <div class="input-box">
+                    <input type="text" class="contact-input" name="user_name" placeholder="Full Name" required autocomplete="off">
+                    <input type="email" class="contact-input" name="user_email" placeholder="Email Address" required autocomplete="off">
+                </div>
+            
+                <div class="input-box">
+                    <input type="number" class="contact-input" name="user_number" placeholder="Mobile Number" required autocomplete="off">
+                    <input type="text" class="contact-input" name="user_text" placeholder="Email Subject" required autocomplete="off">
+                </div>
+            
+                <textarea name="message" class="contact-input" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Georgiy | All right reserved!</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="scripts.js"></script>
+
+
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init("Lg1zBIK3gQfL9xqbE"); // Ваш Public Key
+        </script>
+    
+</body>
+</html>
