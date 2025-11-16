@@ -92,17 +92,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let contactForm = document.getElementById('contact-form');
 
   let sendEmail = (e) => {
-      e.preventDefault(); // Отмена стандартного действия формы
+      e.preventDefault();
 
       emailjs.sendForm(
           'service_w7us3ro', 
           'template_im2ounj', 
-          contactForm, // Передаём сам элемент формы
+          contactForm,
           'Lg1zBIK3gQfL9xqbE'
       ).then(
           function(response) {
               alert("Сообщение успешно отправлено!");
-              contactForm.reset(); // Очищаем форму после успешной отправки
+              contactForm.reset();
           },
           function(error) {
               alert("Ошибка при отправке: " + JSON.stringify(error));
@@ -124,4 +124,5 @@ function toggleText() {
       moreText.style.display = "none";
       btn.innerText = "Читать больше";
   }
+
 }
