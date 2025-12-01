@@ -85,32 +85,29 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {
   origin: 'right'
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  let contactForm = document.getElementById('contact-form');
 
-  let sendEmail = (e) => {
-      e.preventDefault();
+    emailjs.init("1F-3uz-Ik4DGCrVmQ");
 
-      emailjs.sendForm(
-          'service_w7us3ro', 
-          'template_im2ounj', 
-          contactForm,
-          'Lg1zBIK3gQfL9xqbE'
-      ).then(
-          function(response) {
-              alert("Сообщение успешно отправлено!");
-              contactForm.reset();
-          },
-          function(error) {
-              alert("Ошибка при отправке: " + JSON.stringify(error));
-          }
-      );
-  };
+    const contactForm = document.getElementById('contact-form');
 
-  contactForm.addEventListener('submit', sendEmail);
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_24gol8x',
+            'template_23ydxna',
+            contactForm
+        )
+        .then(() => {
+            alert("Message sent successfully");
+            contactForm.reset();
+        })
+        .catch((error) => {
+            alert("Error: " + JSON.stringify(error));
+        });
+    });
+
 });
 
 function toggleText() {
@@ -126,3 +123,4 @@ function toggleText() {
   }
 
 }
+
